@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[\App\Http\Controllers\FrontEnd\HomeController::class,'index']);
+
+Route::get('/khoa-hoc/{course}/{any}',[\App\Http\Controllers\FrontEnd\HomeController::class,'vue'])->where('any','.*');

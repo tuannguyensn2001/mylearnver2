@@ -35,6 +35,7 @@ class LessonCrudController extends CrudController
         $this->chapterRepository = $chapterRepository;
         $this->statusRepository = $statusRepository;
         $this->repository = $lessonRepository;
+
     }
 
     /**
@@ -148,7 +149,7 @@ class LessonCrudController extends CrudController
         return view('admin.lesson.edit', $this->data);
     }
 
-    public function update(LessonRequest $lessonRequest,$id)
+    public function update(LessonRequest $lessonRequest,$id): \Illuminate\Http\RedirectResponse
     {
         $data = $lessonRequest->except(['_token','save_action']);
 
@@ -157,6 +158,17 @@ class LessonCrudController extends CrudController
         $result ? \Alert::success(trans('admin_lesson.actions.update_success'))->flash() :    \Alert::danger(trans('admin_lesson.actions.update_fail'))->flash();
 
         return redirect()->back();
+    }
+
+    public function index()
+    {
+        $this->crud->hasAccessOrFail('list');
+
+        $this->data['crud'] = $this->crud;
+        $this->data['title'] = $this->crud->getTitle() ?? mb_ucfirst($this->crud->entity_name_plural);
+
+        // load the view from /resources/views/vendor/backpack/crud/ if it exists, otherwise load the one in the package
+        return view('admin/lesson/list', $this->data);
     }
 
 }
