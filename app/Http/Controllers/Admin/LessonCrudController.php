@@ -171,4 +171,35 @@ class LessonCrudController extends CrudController
         return view('admin/lesson/list', $this->data);
     }
 
+    public function show($id)
+    {
+        $this->crud->hasAccessOrFail('show');
+
+        // get entry ID from Request (makes sure its the last ID for nested resources)
+        $id = $this->crud->getCurrentEntryId() ?? $id;
+        $setFromDb = $this->crud->get('show.setFromDb');
+
+        // get the info for that entry
+        $this->data['entry'] = $this->crud->getEntry($id);
+        $this->data['crud'] = $this->crud;
+        $this->data['title'] = $this->crud->getTitle() ?? trans('backpack::crud.preview').' '.$this->crud->entity_name;
+
+        // set columns from db
+        if ($setFromDb) {
+            $this->crud->setFromDb();
+        }
+
+
+
+        // remove preview button from stack:line
+        $this->crud->removeButton('show');
+
+        // remove bulk actions colums
+        $this->crud->removeColumns(['blank_first_column', 'bulk_actions']);
+
+        // load the view from /resources/views/vendor/backpack/crud/ if it exists, otherwise load the one in the package
+
+        return view('admin/lesson/show', $this->data);
+    }
+
 }
