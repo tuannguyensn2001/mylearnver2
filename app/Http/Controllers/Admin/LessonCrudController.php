@@ -119,11 +119,12 @@ class LessonCrudController extends CrudController
 
     public function store(LessonRequest $lessonRequest): \Illuminate\Http\RedirectResponse
     {
-        $data = $lessonRequest->except(['_token','save_action']);
+        $data = $lessonRequest->only(['name','description','chapter_id','video_url','status_id']);
+
 
         $result = $this->repository->create($data);
 
-        $result ? \Alert::success(trans('admin_lesson.actions.insert_success'))->flash() :    \Alert::success(trans('admin_lesson.actions.insert_fail'))->flash();
+        $result ? \Alert::success(trans('admin_lesson.actions.insert_success'))->flash() :    \Alert::warning(trans('admin_lesson.actions.insert_fail'))->flash();
 
         return redirect()->back();
     }

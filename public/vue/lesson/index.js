@@ -15323,7 +15323,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.main[data-v-5cf8572a] {\n    padding-top: 44px;\n}\n.playlists[data-v-5cf8572a] {\n}\n\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.main[data-v-5cf8572a] {\r\n    padding-top: 44px;\n}\n.playlists[data-v-5cf8572a] {\n}\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -15346,7 +15346,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.content_lesson[data-v-d527ed9c]{\n  box-sizing: border-box;\n  overflow-x: hidden;\n  overflow-y: auto;\n  height: 100%;\n}\n.content_lesson > div[data-v-d527ed9c]:not(:first-child) {\n  display: flex;\n  justify-content: center;\n}\n.router-view[data-v-d527ed9c]{\n  margin-top: 15px;\n  width: 90%;\n}\n.tabs[data-v-d527ed9c] {\n  height: 60px;\n  width: 90%;\n  display: flex;\n  border-bottom: 1px solid gray;\n}\n.tabs > a[data-v-d527ed9c] {\n  text-decoration: none;\n  color: #666;\n  font-weight: 400;\n  display: flex;\n  position: relative;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\na[data-v-d527ed9c]:not(:first-child) {\n  margin-left: 15px;\n}\n.tabs:hover a[data-v-d527ed9c] {\n  color: #000;\n}\n.tab_item_active[data-v-d527ed9c] {\n  border-bottom: 4px solid black;\n}\n.tab_item > a[data-v-d527ed9c] {\n  /*margin: 0 ;*/\n  /*position: absolute;*/\n  /*top: 50%;*/\n  /*transform: translateY(-50%);*/\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.content_lesson[data-v-d527ed9c]{\r\n  box-sizing: border-box;\r\n  overflow-x: hidden;\r\n  overflow-y: auto;\r\n  height: 100%;\n}\n.content_lesson > div[data-v-d527ed9c]:not(:first-child) {\r\n  display: flex;\r\n  justify-content: center;\n}\n.router-view[data-v-d527ed9c]{\r\n  margin-top: 15px;\r\n  width: 90%;\n}\n.tabs[data-v-d527ed9c] {\r\n  height: 60px;\r\n  width: 90%;\r\n  display: flex;\r\n  border-bottom: 1px solid gray;\n}\n.tabs > a[data-v-d527ed9c] {\r\n  text-decoration: none;\r\n  color: #666;\r\n  font-weight: 400;\r\n  display: flex;\r\n  position: relative;\r\n  justify-content: center;\r\n  align-items: center;\r\n  flex-direction: column;\n}\na[data-v-d527ed9c]:not(:first-child) {\r\n  margin-left: 15px;\n}\n.tabs:hover a[data-v-d527ed9c] {\r\n  color: #000;\n}\n.tab_item_active[data-v-d527ed9c] {\r\n  border-bottom: 4px solid black;\n}\n.tab_item > a[data-v-d527ed9c] {\r\n  /*margin: 0 ;*/\r\n  /*position: absolute;*/\r\n  /*top: 50%;*/\r\n  /*transform: translateY(-50%);*/\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -15415,7 +15415,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.playlist[data-v-0bb5c8e9]{\n  box-sizing: border-box;\n}\n.playlist_lg[data-v-0bb5c8e9]{\n  overflow-x: hidden;\n  overflow-y: auto;\n  height: 100%;\n  position: fixed;\n  width: 25%;\n}\nsection > div[data-v-0bb5c8e9] {\n  box-sizing: border-box;\n}\nheader > div[data-v-0bb5c8e9]:first-child {\n  padding: 12px 16px;\n  background-color: #fff;\n}\n.right-playlist[data-v-0bb5c8e9] {\n  margin-top: 2px;\n}\n.right-playlist[data-v-0bb5c8e9]:hover {\n  cursor: pointer;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.playlist[data-v-0bb5c8e9]{\r\n  box-sizing: border-box;\n}\n.playlist_lg[data-v-0bb5c8e9]{\r\n  overflow-x: hidden;\r\n  overflow-y: auto;\r\n  height: 100%;\r\n  position: fixed;\r\n  width: 25%;\n}\nsection > div[data-v-0bb5c8e9] {\r\n  box-sizing: border-box;\n}\nheader > div[data-v-0bb5c8e9]:first-child {\r\n  padding: 12px 16px;\r\n  background-color: #fff;\n}\n.right-playlist[data-v-0bb5c8e9] {\r\n  margin-top: 2px;\n}\n.right-playlist[data-v-0bb5c8e9]:hover {\r\n  cursor: pointer;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

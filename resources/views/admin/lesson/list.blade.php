@@ -17,7 +17,7 @@
       <span class="text-capitalize">{!! $crud->getHeading() ?? $crud->entity_name_plural !!}</span>
       <small id="datatable_info_stack">{!! $crud->getSubheading() ?? '' !!}</small>
     </h2>
-      <a href="http://mylearn.com/admin/lesson/create" class="btn btn-primary" data-style="zoom-in"><span class="ladda-label"><i class="la la-plus"></i> Thêm mới bài giảng</span></a>
+      <a href="/admin/lesson/create" class="btn btn-primary" data-style="zoom-in"><span class="ladda-label"><i class="la la-plus"></i> Thêm mới bài giảng</span></a>
 
   </div>
 @endsection

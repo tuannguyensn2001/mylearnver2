@@ -12,6 +12,7 @@ class LessonRepository implements LessonRepositoryInterface
 
     public function create($data): bool
     {
+
         try {
             $data['slug'] = Str::slug($data['name']);
             Lesson::create($data);

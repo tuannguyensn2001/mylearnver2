@@ -15377,6 +15377,7 @@ module.exports = function transformData(data, headers, fns) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
+/* provided dependency */ var process = __webpack_require__(/*! process/browser */ "./node_modules/process/browser.js");
 
 
 var utils = __webpack_require__(/*! ./utils */ "./node_modules/axios/lib/utils.js");
@@ -16392,9 +16393,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   state.chapters = [];
                 }
 
+                console.log(response);
                 state.flag = true;
 
-              case 6:
+              case 7:
               case "end":
                 return _context2.stop();
             }
@@ -16692,6 +16694,23 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
 /***/ }),
 
+/***/ "./resources/js/config.js":
+/*!********************************!*\
+  !*** ./resources/js/config.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  baseURL: 'http://mylearn.local'
+});
+
+/***/ }),
+
 /***/ "./resources/js/module/admin_lesson_list/index.js":
 /*!********************************************************!*\
   !*** ./resources/js/module/admin_lesson_list/index.js ***!
@@ -16704,10 +16723,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App */ "./resources/js/module/admin_lesson_list/App.vue");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../config */ "./resources/js/config.js");
 
 
 
-(axios__WEBPACK_IMPORTED_MODULE_2___default().defaults.baseURL) = "http://mylearn.com";
+
+(axios__WEBPACK_IMPORTED_MODULE_2___default().defaults.baseURL) = _config__WEBPACK_IMPORTED_MODULE_3__.default.baseURL;
 var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_App__WEBPACK_IMPORTED_MODULE_1__.default);
 app.mount('#app');
 
@@ -16754,7 +16775,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nsection[data-v-f780a33a] {\n    margin-top: 10px;\n}\n.chapter[data-v-f780a33a] {\n    display: flex;\n    border: 1px solid rgba(240, 81, 35, .15);\n    background: #3965e9;\n    color: white;\n    height: 38px;\n    align-items: center;\n}\n.chapter[data-v-f780a33a]:hover {\n    cursor: pointer;\n}\n.chapter > div[data-v-f780a33a] {\n}\n.plus[data-v-f780a33a] {\n    padding-top: 4px;\n    padding-left: 20px;\n}\n.content[data-v-f780a33a] {\n    padding-left: 15px;\n}\n.lesson[data-v-f780a33a] {\n    display: none;\n}\n.show[data-v-f780a33a] {\n    display: block;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nsection[data-v-f780a33a] {\r\n    margin-top: 10px;\n}\n.chapter[data-v-f780a33a] {\r\n    display: flex;\r\n    border: 1px solid rgba(240, 81, 35, .15);\r\n    background: #3965e9;\r\n    color: white;\r\n    height: 38px;\r\n    align-items: center;\n}\n.chapter[data-v-f780a33a]:hover {\r\n    cursor: pointer;\n}\n.chapter > div[data-v-f780a33a] {\n}\n.plus[data-v-f780a33a] {\r\n    padding-top: 4px;\r\n    padding-left: 20px;\n}\n.content[data-v-f780a33a] {\r\n    padding-left: 15px;\n}\n.lesson[data-v-f780a33a] {\r\n    display: none;\n}\n.show[data-v-f780a33a] {\r\n    display: block;\n}\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -16778,7 +16799,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.lesson_item[data-v-ff4843dc]{\n        display: flex;\n        height: 38px;\n        align-items:center;\n        flex-direction: row;\n        background: #efeded;\n        border-bottom: 1px solid blue;\n        justify-content: space-between;\n        line-height: 1.4rem;\n}\n.content[data-v-ff4843dc]{\n        margin-left: 54px;\n}\na[data-v-ff4843dc]{\n        text-decoration: none;\n        list-style: none;\n        color: #0b0b0b;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.lesson_item[data-v-ff4843dc]{\r\n        display: flex;\r\n        height: 38px;\r\n        align-items:center;\r\n        flex-direction: row;\r\n        background: #efeded;\r\n        border-bottom: 1px solid blue;\r\n        justify-content: space-between;\r\n        line-height: 1.4rem;\n}\n.content[data-v-ff4843dc]{\r\n        margin-left: 54px;\n}\na[data-v-ff4843dc]{\r\n        text-decoration: none;\r\n        list-style: none;\r\n        color: #0b0b0b;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -16858,6 +16879,200 @@ module.exports = function (cssWithMappingToString) {
 
   return list;
 };
+
+/***/ }),
+
+/***/ "./node_modules/process/browser.js":
+/*!*****************************************!*\
+  !*** ./node_modules/process/browser.js ***!
+  \*****************************************/
+/***/ ((module) => {
+
+// shim for using process in browser
+var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout () {
+    throw new Error('clearTimeout has not been defined');
+}
+(function () {
+    try {
+        if (typeof setTimeout === 'function') {
+            cachedSetTimeout = setTimeout;
+        } else {
+            cachedSetTimeout = defaultSetTimout;
+        }
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') {
+            cachedClearTimeout = clearTimeout;
+        } else {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+} ())
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) {
+        //normal enviroments in sane situations
+        return setTimeout(fun, 0);
+    }
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch(e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch(e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+
+
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) {
+        //normal enviroments in sane situations
+        return clearTimeout(marker);
+    }
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+
+
+
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
+
+function drainQueue() {
+    if (draining) {
+        return;
+    }
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+
+    var len = queue.length;
+    while(len) {
+        currentQueue = queue;
+        queue = [];
+        while (++queueIndex < len) {
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
+        }
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+
+process.nextTick = function (fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
+        runTimeout(drainQueue);
+    }
+};
+
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
+
+function noop() {}
+
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+};
+
+process.cwd = function () { return '/' };
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function() { return 0; };
+
 
 /***/ }),
 

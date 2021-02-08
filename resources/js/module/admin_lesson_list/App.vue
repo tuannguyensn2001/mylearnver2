@@ -71,6 +71,8 @@ export default {
                 state.chapters = [];
             }
 
+            console.log(response);
+
             state.flag = true;
         }
 
