@@ -47,7 +47,7 @@ class LessonCrudController extends CrudController
     {
         CRUD::setModel(\App\Models\Lesson::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/lesson');
-        CRUD::setEntityNameStrings('lesson', 'lessons');
+        CRUD::setEntityNameStrings('lesson', 'Bài giảng');
     }
 
     /**

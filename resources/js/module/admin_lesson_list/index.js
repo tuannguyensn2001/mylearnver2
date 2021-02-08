@@ -1,6 +1,9 @@
 import {createApp} from 'vue'
-import Lesson from "./Lesson";
+import App from "./App";
+import axios from 'axios'
 
-const app = createApp(Lesson);
+axios.defaults.baseURL = "http://mylearn.com"
+
+const app = createApp(App);
 
 app.mount('#app');

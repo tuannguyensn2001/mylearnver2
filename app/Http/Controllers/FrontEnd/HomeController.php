@@ -4,6 +4,7 @@ namespace App\Http\Controllers\FrontEnd;
 
 use App\Http\Controllers\Controller;
 use App\Models\Course;
+use App\Models\Lesson;
 use Illuminate\Http\Request;
 use Barryvdh\Debugbar\Facade as Debugbar;
 
@@ -11,6 +12,7 @@ class HomeController extends Controller
 {
     public function index()
     {
+
 
         foreach (Course::all() as $course) {
             Debugbar::info('course');
