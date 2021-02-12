@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Level;
+use App\Models\Tag;
 use Illuminate\Database\Seeder;
 
-class LevelSeeder extends Seeder
+class TagSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,8 +14,9 @@ class LevelSeeder extends Seeder
      */
     public function run()
     {
-        Level::create([
-            'name' => 'Dễ'
+        Tag::create([
+            'name' => 'Frontend',
+            'category_id' => 1,
         ]);
     }
 }

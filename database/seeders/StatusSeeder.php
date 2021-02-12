@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Level;
+use App\Models\Status;
 use Illuminate\Database\Seeder;
 
-class LevelSeeder extends Seeder
+class StatusSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,8 +14,8 @@ class LevelSeeder extends Seeder
      */
     public function run()
     {
-        Level::create([
-            'name' => 'Dễ'
+        Status::create([
+            'name' => 'Công khai'
         ]);
     }
 }
