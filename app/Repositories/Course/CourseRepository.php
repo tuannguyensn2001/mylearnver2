@@ -11,6 +11,6 @@ class CourseRepository implements CourseRepositoryInterface
 
     public function all()
     {
-        return Course::all();
+        return Course::all()->with('category');
     }
 }
