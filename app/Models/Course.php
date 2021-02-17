@@ -37,4 +37,12 @@ class Course extends Model
         return $this->hasManyThrough(Lesson::class,Chapter::class);
     }
 
+    public function contents(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Content::class);
+    }
+
+
+
+
 }

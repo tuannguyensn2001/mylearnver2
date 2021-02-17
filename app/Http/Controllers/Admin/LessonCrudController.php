@@ -152,11 +152,11 @@ class LessonCrudController extends CrudController
 
     public function update(LessonRequest $lessonRequest,$id): \Illuminate\Http\RedirectResponse
     {
-        $data = $lessonRequest->except(['_token','save_action']);
+        $data = $lessonRequest->only(['name','description','chapter_id','video_url','status_id']);
 
         $result = $this->repository->update($id,$data);
 
-        $result ? \Alert::success(trans('admin_lesson.actions.update_success'))->flash() :    \Alert::danger(trans('admin_lesson.actions.update_fail'))->flash();
+        $result ? \Alert::success(trans('admin_lesson.actions.update_success'))->flash() :    \Alert::warning(trans('admin_lesson.actions.update_fail'))->flash();
 
         return redirect()->back();
     }

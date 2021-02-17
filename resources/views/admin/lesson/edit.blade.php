@@ -103,6 +103,7 @@
             (() => {
                 const courseId = course.val()-0;
 
+
                 const chapterFilter = chapters.filter(chapter => chapter.course_id === courseId);
 
                 let option = '';

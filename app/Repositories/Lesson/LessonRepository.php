@@ -35,6 +35,7 @@ class LessonRepository implements LessonRepositoryInterface
            $lesson->update($data);
            return true;
        } catch (\Exception $exception){
+           dd($exception);
            return false;
        }
     }
