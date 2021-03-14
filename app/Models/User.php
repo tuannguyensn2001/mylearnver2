@@ -56,4 +56,15 @@ class User extends Authenticatable implements JWTSubject
     {
         return [];
     }
+
+    public function wallet(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne(Wallet::class);
+    }
+
+    public function courses(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    {
+        return $this->belongsToMany(Course::class,'user_course','course_id','user_id');
+    }
+
 }

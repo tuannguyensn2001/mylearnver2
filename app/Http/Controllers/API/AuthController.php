@@ -81,7 +81,7 @@ class AuthController extends Controller
             'token' => $token,
             'token_type' => 'bearer',
             'expires_in' => auth()->factory()->getTTL() * 60,
-            'user' => auth()->setToken($token)->user(),
+            'user' => User::with('wallet')->find(auth()->user()->id),
         ]);
     }
 

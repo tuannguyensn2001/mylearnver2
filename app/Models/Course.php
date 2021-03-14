@@ -42,7 +42,10 @@ class Course extends Model
         return $this->hasMany(Content::class);
     }
 
-
+    public function users(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    {
+        return $this->belongsToMany(User::class,'user_course','user_id','course_id');
+    }
 
 
 }

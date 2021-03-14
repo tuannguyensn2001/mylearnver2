@@ -3,7 +3,9 @@
 namespace Database\Seeders;
 
 use App\Models\Status;
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class StatusSeeder extends Seeder
 {
@@ -14,8 +16,17 @@ class StatusSeeder extends Seeder
      */
     public function run()
     {
-        Status::create([
-            'name' => 'Công khai'
+        DB::table('statuses')->insert([
+            [
+                'name' => 'Công khai',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+            [
+                'name' => 'Bí mật',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ]
         ]);
     }
 }

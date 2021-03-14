@@ -17,7 +17,9 @@ class DatabaseSeeder extends Seeder
             CategorySeeder::class,
             LevelSeeder::class,
             StatusSeeder::class,
-            TagSeeder::class
+            TagSeeder::class,
+            AdminSeeder::class,
+            CourseSeeder::class,
         ]);
     }
 }
